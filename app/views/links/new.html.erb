@@ -1,0 +1,11 @@
+<div class="container"> 
+  <h1 class="col-mid-4">Hello, world!</h1>
+  <h2>Add an InsiderPages URL</h2>
+  <p>(it takes a few seconds to crawl the page, so be patient.) :)
+  <br><br><br><br>
+</div>  
+
+<div class="container">
+  <%= react_component('NewLinkWithReviews', {initialLink: @links.last}) %><br>
+  <%= react_component('Links', {initialLinks: @links}, {prerender: true}) %>
+</div>

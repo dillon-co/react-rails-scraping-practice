@@ -1,0 +1,24 @@
+# == Schema Information
+#
+# Table name: links
+#
+#  id            :integer          not null, primary key
+#  text          :string
+#  company       :string
+#  review_count  :integer
+#  average_stars :integer
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  text: MyString
+  review_count: 1
+  average_stars: 1
+
+two:
+  text: MyString
+  review_count: 1
+  average_stars: 1
