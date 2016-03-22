@@ -11,7 +11,7 @@ class NewLinkWithReviews extends React.Component {
     var scraper_url = $('#link-text').val();
     if (scraper_url.split('.')[1] === "insiderpages"){ 
       console.log (scraper_url);
-      $.post(window.location.origin+'/call_crawling_worker', {scrapper_url: scraper_url})
+      $.post(window.location.origin+'/call_crawller', {scrapper_url: scraper_url})
     }else{
       alert("That's not a valid link! You need to use a review page from www.insiderpages.com")
     }  

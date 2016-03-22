@@ -1,5 +1,3 @@
-require_relative '../workers/crawling_worker'
-
 class LinksController < ApplicationController
 
   def show
@@ -48,10 +46,9 @@ class LinksController < ApplicationController
     end
   end  
 
-  def call_crawling_worker
+  def call_crawller
     scrapper_url = params[:scrapper_url]
     link = Link.where(text: scrapper_url).first_or_create
-    # CrawlingWorker.perform_async(link.id)
     Link.find(link.id).crawl_link_and_set_values
     respond_to do |format|
       format.js { render nothing: true}

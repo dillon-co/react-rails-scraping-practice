@@ -25,9 +25,7 @@ gem 'wombat'
 
 gem 'annotate'
 
-gem 'sidekiq'
 
-gem 'sinatra', require: nil
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'

@@ -1,9 +1,8 @@
-require 'sidekiq/web'
 Rails.application.routes.draw do
   resources :reviews
   resources :links
 
-  post 'call_crawling_worker' => 'links#call_crawling_worker'
+  post 'call_crawller' => 'links#call_crawller'
 
   get 'fetch_review_data' => 'links#fetch_review_data'
 
