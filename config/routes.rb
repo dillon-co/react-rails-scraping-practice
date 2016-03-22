@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: 'links#new'
+  
   resources :reviews
   resources :links
 
@@ -10,7 +12,6 @@ Rails.application.routes.draw do
 
   delete 'delete_link' => 'links#delete_link'
 
-  root to: 'links#new'
 
   # mount Sidekiq::Web => '/sidekiq'
   # The priority is based upon order of creation: first created -> highest priority.
