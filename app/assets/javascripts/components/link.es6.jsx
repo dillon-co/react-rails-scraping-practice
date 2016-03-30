@@ -19,11 +19,6 @@ class Links extends React.Component {
     })
   }
 
-  tick(){
-    // this.updateLinks.bind(this)
-    console.log('meow');
-  }
-
   render () {
     var links = this.state.initialLinks.map(function(link){
       return (
@@ -119,9 +114,3 @@ class Review extends React.Component{
     )
   }
 }
-
-// Links.propTypes = {
-//   text: React.PropTypes.string,
-//   company: React.PropTypes.string,
-//   averageStars: React.PropTypes.node
-// };

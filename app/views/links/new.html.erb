@@ -7,5 +7,5 @@
 
 <div class="container">
   <%= react_component('NewLinkWithReviews', {initialLink: @links.last}) %><br>
-  <%= react_component('Links', {initialLinks: @links}) %>
+  <%= react_component('Links', {initialLinks: @links, prerender: true}) %>
 </div>
