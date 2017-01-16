@@ -1,5 +1,10 @@
+
+
 source 'https://rubygems.org'
 
+# cocos2ds
+
+# Mxenabled github org
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
